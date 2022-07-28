@@ -1,5 +1,5 @@
-require 'plugins'
 require 'options'
+require 'plugins'
 require 'nvim_cmp'
 require 'mason_setup'
 require 'nvim_tree'
