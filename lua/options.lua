@@ -8,8 +8,8 @@ local options = {
     smartindent = true,
     fileencoding = 'utf-8',
     mouse = 'a',
-	completeopt = {'menu', 'menuone', 'noselect'},
-	expandtab = true
+    completeopt = {'menu', 'menuone', 'noselect'},
+    expandtab = true
 }
 
 for k, v in pairs(options) do
