@@ -6,7 +6,7 @@ local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
     packer_bootstrap = fn.system({
         'git',       'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim',
-	install_path
+        install_path
     })
 end
 
@@ -42,8 +42,8 @@ return require('packer').startup(function()
 
     -- telescope
     use({
-	'nvim-telescope/telescope.nvim',
-	branch = '0.1.x'
+        'nvim-telescope/telescope.nvim',
+        branch = '0.1.x'
     })
 
     -- nvim-tree
@@ -60,17 +60,17 @@ return require('packer').startup(function()
     use 'hrsh7th/cmp-nvim-lua'
     use({
         'hrsh7th/nvim-cmp',
-		requires = {
-	    	{'hrsh7th/cmp-nvim-lsp'},
-	    	{'L3MON4D3/LuaSnip'},
-	    	{'saadparwaiz1/cmp_luasnip'}
-		}
+        requires = {
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'L3MON4D3/LuaSnip'},
+            {'saadparwaiz1/cmp_luasnip'}
+        }
     })
    
      -- Darcula Solid Theme
     use {
         "briones-gabriel/darcula-solid.nvim",
-	requires = "rktjmp/lush.nvim"
+        requires = "rktjmp/lush.nvim"
     }
 
     -- Automatically set up your configuration after cloning packer.nvim
