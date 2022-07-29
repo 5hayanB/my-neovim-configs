@@ -9,7 +9,9 @@ local options = {
     fileencoding = 'utf-8',
     mouse = 'a',
     completeopt = {'menu', 'menuone', 'noselect'},
-    expandtab = true
+    expandtab = true,
+    autoindent = true,
+    clipboard = "unnamedplus"
 }
 
 for k, v in pairs(options) do
