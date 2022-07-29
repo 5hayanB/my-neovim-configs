@@ -7,7 +7,8 @@ local options = {
     cursorline = true,
     smartindent = true,
     fileencoding = 'utf-8',
-    mouse = 'a'
+    mouse = 'a',
+	completeopt = {'menu', 'menuone', 'noselect'}
 }
 
 for k, v in pairs(options) do
