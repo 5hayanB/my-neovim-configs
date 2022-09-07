@@ -73,6 +73,9 @@ return require('packer').startup(function()
         requires = "rktjmp/lush.nvim"
     }
 
+    -- autopairs
+    use "windwp/nvim-autopairs"
+
     -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
         require('packer').sync()
