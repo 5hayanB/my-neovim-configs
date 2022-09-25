@@ -1,8 +1,8 @@
 local options = {
     termguicolors = true,
-    shiftwidth = 4,
+    shiftwidth = 8,
     wrap = false,
-    tabstop = 4,
+    tabstop = 8,
     number = true,
     cursorline = true,
     smartindent = true,
@@ -10,7 +10,8 @@ local options = {
     completeopt = {'menu', 'menuone', 'noselect'},
     expandtab = true,
     autoindent = true,
-    clipboard = "unnamedplus"
+    clipboard = "unnamedplus",
+    mouse = "a"
 }
 
 for k, v in pairs(options) do
